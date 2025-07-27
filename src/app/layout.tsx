@@ -16,7 +16,6 @@
 import type { Metadata } from "next"
 import { Geist } from "next/font/google"
 import "./globals.css"
-import { NotificationSystemInitializer } from "@/components/notification-system-initializer"
 import { QueryClientProvider } from "@/components/providers/query-client-provider"
 import { ThemeProvider } from "@/components/providers/theme-provider"
 import { Toaster } from "@/components/ui/sonner"
@@ -49,7 +48,6 @@ export default function RootLayout({
               {children}
             </div>
             <Toaster />
-            <NotificationSystemInitializer />
           </ThemeProvider>
         </QueryClientProvider>
       </body>
