@@ -14,6 +14,7 @@
  */
 
 import { HE60 } from "./devices/HE60"
+import { HE60_JIS } from "./devices/HE60-JIS"
 import { M256_WHE } from "./devices/M256-WHE"
 
-export const DEVICE_METADATA = [HE60, M256_WHE]
+export const DEVICE_METADATA = [HE60, HE60_JIS, M256_WHE]

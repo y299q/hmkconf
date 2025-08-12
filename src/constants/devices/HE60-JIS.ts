@@ -16,7 +16,7 @@
 import { DeviceMetadata, deviceMetadataSchema } from "@/types/device-metadata"
 import { Keycode, MO, PF } from "@/types/keycodes"
 
-export const HE60-JIS: DeviceMetadata = deviceMetadataSchema.parse({
+export const HE60_JIS: DeviceMetadata = deviceMetadataSchema.parse({
   name: "HE60-JIS",
   vendorId: 0xab50,
   productId: 0xab61,
@@ -57,7 +57,7 @@ export const HE60-JIS: DeviceMetadata = deviceMetadataSchema.parse({
       { key: 26 },
       { key: 27 },
       { key: 28 },
-      { key: 29, w: 1.5, h: 2},
+      { key: 29, w: 1.5, h: 2 },
     ],
     [
       { key: 30, w: 1.75 },
@@ -100,7 +100,7 @@ export const HE60-JIS: DeviceMetadata = deviceMetadataSchema.parse({
       { key: 66, w: 1.25 },
     ],
     [
-      { key: 59, x: 3.75, w:2.75 },
+      { key: 59, x: 3.75, w: 2.75 },
       { key: 60, w: 1.25 },
       { key: 62, w: 2.25 },
     ],
@@ -121,8 +121,8 @@ export const HE60-JIS: DeviceMetadata = deviceMetadataSchema.parse({
       Keycode.KC_MINS,
       Keycode.KC_EQL,
       Keycode._______,
-      Keycode.KC_BSPC,
-      Keycode._______, // Row 1
+      Keycode._______,
+      Keycode.KC_BSPC, // Row 1
       Keycode.KC_TAB,
       Keycode.KC_Q,
       Keycode.KC_W,
@@ -136,7 +136,7 @@ export const HE60-JIS: DeviceMetadata = deviceMetadataSchema.parse({
       Keycode.KC_P,
       Keycode.KC_LBRC,
       Keycode.KC_RBRC,
-      Keycode.KC_BSLS, // Row 2
+      Keycode.KC_ENT, // Row 2
       Keycode.KC_CAPS,
       Keycode.KC_A,
       Keycode.KC_S,
@@ -149,7 +149,7 @@ export const HE60-JIS: DeviceMetadata = deviceMetadataSchema.parse({
       Keycode.KC_L,
       Keycode.KC_SCLN,
       Keycode.KC_QUOT,
-      Keycode.KC_ENT, // Row 3
+      Keycode.KC_BSLS, // Row 3
       Keycode.KC_LSFT,
       Keycode.KC_Z,
       Keycode.KC_X,
@@ -161,8 +161,8 @@ export const HE60-JIS: DeviceMetadata = deviceMetadataSchema.parse({
       Keycode.KC_COMM,
       Keycode.KC_DOT,
       Keycode.KC_SLSH,
-      Keycode.KC_RSFT,
-      MO(1), // Row 4
+      Keycode.KC_NONUS_BACKSLASH,
+      Keycode.KC_RSFT, // Row 4
       Keycode.KC_LCTL,
       Keycode.KC_LGUI,
       Keycode.KC_LALT,
@@ -170,10 +170,10 @@ export const HE60-JIS: DeviceMetadata = deviceMetadataSchema.parse({
       Keycode._______,
       Keycode.KC_SPC,
       Keycode._______,
-      Keycode._______,
       Keycode.KC_RALT,
       Keycode.KC_RGUI,
-      Keycode.KC_RCTL, // Row 5
+      Keycode.KC_RCTL,
+      MO(1), // Row 5
     ],
     [
       Keycode.KC_GRV,
@@ -190,8 +190,8 @@ export const HE60-JIS: DeviceMetadata = deviceMetadataSchema.parse({
       Keycode.KC_F11,
       Keycode.KC_F12,
       Keycode._______,
-      Keycode.KC_DEL,
-      Keycode._______, // Row 1
+      Keycode._______,
+      Keycode.KC_DEL, // Row 1
       Keycode.KC_PSCR,
       Keycode._______,
       Keycode.KC_PGUP,
@@ -205,7 +205,7 @@ export const HE60-JIS: DeviceMetadata = deviceMetadataSchema.parse({
       PF(1),
       PF(2),
       PF(3),
-      Keycode.SP_BOOT, // Row 2
+      Keycode._______, // Row 2
       Keycode._______,
       Keycode.KC_HOME,
       Keycode.KC_PGDN,
@@ -217,9 +217,8 @@ export const HE60-JIS: DeviceMetadata = deviceMetadataSchema.parse({
       Keycode.KC_MPLY,
       Keycode.KC_MNXT,
       Keycode._______,
-      Keycode._______,
+      Keycode.SP_BOOT,
       Keycode.PF_SWAP, // Row 3
-      Keycode._______,
       Keycode._______,
       Keycode._______,
       Keycode._______,
@@ -231,8 +230,8 @@ export const HE60-JIS: DeviceMetadata = deviceMetadataSchema.parse({
       Keycode.KC_VOLD,
       Keycode.KC_VOLU,
       Keycode.KC_UP,
-      Keycode._______, // Row 4
       Keycode._______,
+      Keycode._______, // Row 4
       Keycode._______,
       Keycode._______,
       Keycode._______,
@@ -242,7 +241,8 @@ export const HE60-JIS: DeviceMetadata = deviceMetadataSchema.parse({
       Keycode._______,
       Keycode.KC_LEFT,
       Keycode.KC_DOWN,
-      Keycode.KC_RGHT, // Row 5
+      Keycode.KC_RGHT,
+      Keycode._______, // Row 5
     ],
     Array(67).fill(Keycode._______),
     Array(67).fill(Keycode._______),
